@@ -8,7 +8,7 @@ layout: list
 
 # Create custom rules in the dashboard
 
-Create custom rules in **Security** > **WAF** > **Custom rules**.
+Create custom rules in **Security** > **WAF** > **Custom rules**. The maximum number for any given domain/account is 1,000 (may be lower depending on plan.)
 
 ## Create a custom rule
 
