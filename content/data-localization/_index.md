@@ -8,9 +8,13 @@ meta:
 
 # Data Localization Suite
 
-The Data Localization Suite (DLS) is a set of products that helps customers who want to maintain local control over their traffic while retaining the security benefits of a global network.
+The Data Localization Suite (DLS) is a collection of tools that enable customers to choose the location where Cloudflare inspects and stores data, while maintaining the security and performance benefits of our global network.
 
-DLS is currently available for customers on the Enterprise plan. Reach out to your Customer Success Manager for more information about purchasing DLS.
+{{<Aside type="note">}}
+
+This feature is available as a paid add-on for customers on the Enterprise plan. Reach out to your Customer Success Manager for more information.
+
+{{</Aside>}}
 
 The Data Localization Suite consists of the following products:
 
@@ -32,6 +36,7 @@ Support by product and region is summarized in the following table:
 | ISO 27001 Certified European Union | &#x2705;[^25] | &#x2705; | Can use EU metadata boundary. |
 | Germany | &#x2705;[^25] | &#x2705; | Can use EU metadata boundary. |
 | Singapore | &#x2705;[^25] | &#x2705; | ✘ |
+| South Korea | &#x2705;[^25] | &#x2705; | ✘ |
 
 Overview by product-behavior is summarized in the following table. Below you can find the table legend to help you read the table:
 
@@ -95,7 +100,7 @@ Overview by product-behavior is summarized in the following table. Below you can
 [^4]:API shield will not yet work with Customer Metadata Boundary enabled outside of US region.
 [^5]:Some advanced Enterprise features, including the [Anomaly Detection engine](/bots/concepts/bot-score/#anomaly-detection), are not available.
 [^6]:Cannot be used with Customer Metadata Boundary outside of US region.
-[^7]:[Jurisdiction restrictions for Durable Objects](/workers/runtime-apis/durable-objects/#restricting-objects-to-a-jurisdiction).
+[^7]:[Jurisdiction restrictions for Durable Objects](/durable-objects/platform/data-location/#restrict-durable-objects-to-a-jurisdiction).
 [^8]:You can not yet specify region location for object storage; this is expected in 2023.
 [^9]:Argo cannot be used with Regional Services.
 [^10]:Argo cannot be used with Customer Metadata Boundary.

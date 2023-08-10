@@ -262,7 +262,7 @@ Contact your hosting provider to exclude the following common causes at your or
 -   No valid SSL certificate installed
 -   Port 443 (or other custom secure port) is not open
 -   No [SNI](https://developers.cloudflare.com/fundamentals/glossary#server-name-indication-sni) support
--   The [cipher suites](/ssl/reference/cipher-suites/supported-cipher-suites/) accepted by Cloudflare does not match the cipher suites supported by the origin web server
+-   The [cipher suites](/ssl/origin-configuration/cipher-suites/) presented by Cloudflare to the origin do not match the cipher suites supported by the origin web server
 
 {{<Aside type="tip">}}
 If 525 errors occur intermittently, review the origin web server error
@@ -412,6 +412,7 @@ ___
 
 HTTP error 530 is returned with an accompanying 1XXX error displayed. Search for the specific [1XXX error within the Cloudflare Help Center](https://support.cloudflare.com/hc/sections/200820298) for troubleshooting information.
 
+Enabling [Load Balancing](/load-balancing/) in China will cause a `530` error.
 ___
 
 ## Related resources

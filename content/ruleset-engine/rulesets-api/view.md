@@ -243,8 +243,8 @@ Use one of the following API endpoints:
 | [Get an account entry point ruleset version][gerv-account] | `GET /accounts/{account_id}/rulesets/phases/{phase_name}/entrypoint/versions/{version_number}` |
 | [Get a zone entry point ruleset version][gerv-zone]        | `GET /zones/{zone_id}/rulesets/phases/{phase_name}/entrypoint/versions/{version_number}`       |
 
-[grv-account]: /api/operations/getAccountRulesetVersions
-[grv-zone]: /api/operations/getZoneRulesetVersions
+[grv-account]: /api/operations/getAccountRulesetVersion
+[grv-zone]: /api/operations/getZoneRulesetVersion
 [gerv-account]: /api/operations/getAccountEntrypointRulesetVersion
 [gerv-zone]: /api/operations/getZoneEntrypointRulesetVersion
 
@@ -355,7 +355,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{rulese
           "drupal",
           "wordpress"
         ],
-        "description": "Drupal, Wordpress - DoS - XMLRPC - CVE:CVE-2014-5265, CVE:CVE-2014-5266, CVE:CVE-2014-5267",
+        "description": "Drupal, WordPress - DoS - XMLRPC - CVE:CVE-2014-5265, CVE:CVE-2014-5266, CVE:CVE-2014-5267",
         "last_updated": "2023-03-19T16:54:32.942986Z",
         "ref": "<RULE_REF_1>",
         "enabled": true
@@ -365,7 +365,7 @@ curl https://api.cloudflare.com/client/v4/accounts/{account_id}/rulesets/{rulese
         "version": "3",
         "action": "block",
         "categories": ["broken-access-control", "cve-2018-12895", "wordpress"],
-        "description": "Wordpress - Broken Access Control - CVE:CVE-2018-12895",
+        "description": "WordPress - Broken Access Control - CVE:CVE-2018-12895",
         "last_updated": "2023-03-19T16:54:32.942986Z",
         "ref": "<RULE_REF_2>",
         "enabled": true
